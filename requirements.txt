@@ -4,6 +4,6 @@ dash-core-components==2.0.0
 dash-extensions==0.1.9
 dash-html-components==2.0.0
 dash-table==5.0.0
-networkx==3.1
+networkx==2.6.3
 plotly==5.9.0
 pandas==1.5.2
