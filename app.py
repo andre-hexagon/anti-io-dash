@@ -17,6 +17,7 @@ G = nx.from_pandas_edgelist(data, 'PERSONA', 'PROYECTO', edge_attr='HORAS')
 pos = nx.spring_layout(G, seed=1)
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Define the app layout
 app.layout = html.Div([
