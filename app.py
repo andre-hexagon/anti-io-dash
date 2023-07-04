@@ -21,7 +21,7 @@ server = app.server
 
 # Define the app layout
 app.layout = html.Div([
-    html.H1("Dashboard Anti-I.O."),
+    html.H1("Dashboard Producteevo"),
     #Add a Row with 2 columns
     html.Div([
         html.Div([
