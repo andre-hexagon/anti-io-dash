@@ -141,7 +141,7 @@ def update_graph(selected_persons, selected_projects, selected_clans, selected_c
             consejo = data[data['PERSONA'] == node]['CONSEJO'].iloc[0]
             productive_hours = hours_sum_prod.get(node, 0)
             total_hours = hours_sum.get(node, 0)
-            IO = round(1-(productive_hours / total_hours), 4)
+            IO = round(productive_hours / total_hours, 2) if total_hours else 0
             info = f"Person: {node}<br>Productive Hours: {productive_hours}<br>IO: {IO*100}% <br> Clan: {clan}<br>Consejo: {consejo}"
         else:  # if the node is a project
             info = f"Project: {node}"
